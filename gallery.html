@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Portfolio Gallery — IRON & IVORY Studio</title>
+  <meta name="description" content="Explore Iron & Ivory's visual portfolio. Haircut transformations, beard sculpting line-ups, hot towel shaving rituals, and studio interiors.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- MANDATORY NAVBAR -->
+  <header class="studio-navbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <a href="index.html" class="navbar-brand-logo">
+          <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-link-item has-dropdown">
+              <a href="index.html" class="nav-link-anchor">
+                Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+              </a>
+              <div class="dropdown-panel">
+                <a href="index.html" class="dropdown-anchor">Home 1 — Studio Concept</a>
+                <a href="home-2.html" class="dropdown-anchor">Home 2 — Ritual Concept</a>
+              </div>
+            </li>
+
+            <li class="nav-link-item"><a href="services.html" class="nav-link-anchor">Services</a></li>
+
+            <li class="nav-link-item"><a href="products.html" class="nav-link-anchor">Products</a></li>
+            <li class="nav-link-item"><a href="membership.html" class="nav-link-anchor">Membership</a></li>
+            <li class="nav-link-item"><a href="our-studio.html" class="nav-link-anchor">Our Studio</a></li>
+            <li class="nav-link-item active"><a href="gallery.html" class="nav-link-anchor">Gallery</a></li>
+            <li class="nav-link-item"><a href="contact.html" class="nav-link-anchor">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="d-flex align-items-center gap-3">
+          <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle Theme">
+            <i class="bi bi-sun-fill"></i>
+          </button>
+          
+          <a href="contact.html" class="btn-primary-studio d-inline-flex nav-book-btn trigger-booking-modal">
+            Book Appointment
+          </a>
+
+          <button class="mobile-hamburger" aria-label="Open Mobile Navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="navbar-brand-logo" style="font-size: 1.4rem;">
+          <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+        </a>
+        <button class="drawer-close btn p-0 text-white" aria-label="Close Navigation">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-list">
+        <li>
+          <a href="#" class="nav-link-anchor mobile-dropdown-toggle justify-content-between">
+            Home <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="index.html" class="dropdown-anchor">Home 1 — Studio Concept</a></li>
+            <li><a href="home-2.html" class="dropdown-anchor">Home 2 — Ritual Concept</a></li>
+          </ul>
+        </li>
+
+        <li><a href="services.html" class="nav-link-anchor">Services</a></li>
+
+        <li><a href="products.html" class="nav-link-anchor">Products</a></li>
+        <li><a href="membership.html" class="nav-link-anchor">Membership</a></li>
+        <li><a href="our-studio.html" class="nav-link-anchor">Our Studio</a></li>
+        <li><a href="gallery.html" class="nav-link-anchor active">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link-anchor">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mt-4 pt-3 border-top" style="border-color: var(--border-color) !important;">
+      <a href="contact.html" class="btn-primary-studio w-100 trigger-booking-modal mb-3">
+        Book Appointment
+      </a>
+      <div class="d-flex align-items-center justify-content-between text-muted mb-2" style="font-size: 0.85rem;">
+        <span>Layout Direction:</span>
+        <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction">RTL</button>
+      </div>
+      <div class="d-flex align-items-center justify-content-between text-muted" style="font-size: 0.85rem;">
+        <span>Toggle Mode:</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- PAGE HEADER -->
+  <section class="py-5" style="padding-top: 8rem !important; background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color);">
+    <div class="container text-center py-4">
+      <span class="section-label">Visual Archive</span>
+      <h1 class="display-font mb-3">Studio Gallery</h1>
+      <p class="text-lead" style="max-width: 600px; margin: 0 auto;">
+        An editorial collection of haircut transformations, razor craftsmanship, beard contouring, and our studio sanctuary.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION WITH FILTER & LIGHTBOX -->
+  <section class="py-5">
+    <div class="container py-4">
+      <!-- Filter Bar -->
+      <div class="gallery-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="haircuts">Haircuts</button>
+        <button class="filter-btn" data-filter="beards">Beards</button>
+        <button class="filter-btn" data-filter="shaves">Shaves</button>
+        <button class="filter-btn" data-filter="studio">Studio Interior</button>
+        <button class="filter-btn" data-filter="products">Products</button>
+      </div>
+
+      <div class="row g-4">
+        <!-- Item 1 -->
+        <div class="col-lg-4 col-md-6 filterable-item" data-category="haircuts">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Precision Executive Haircut">
+            <div class="gallery-overlay">
+              <span class="badge-gold w-auto align-self-start mb-2">HAIRCUTS</span>
+              <h4 class="h5 gallery-title mb-1">Executive Low Fade</h4>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;">Click to expand high-res view</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-lg-4 col-md-6 filterable-item" data-category="beards">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Beard Sculpting & Razor Line-Up">
+            <div class="gallery-overlay">
+              <span class="badge-gold w-auto align-self-start mb-2">BEARDS</span>
+              <h4 class="h5 gallery-title mb-1">Beard Contour & Razor Line</h4>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;">Click to expand high-res view</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-lg-4 col-md-6 filterable-item" data-category="shaves">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Hot Towel Straight Razor Shave">
+            <div class="gallery-overlay">
+              <span class="badge-gold w-auto align-self-start mb-2">SHAVES</span>
+              <h4 class="h5 gallery-title mb-1">Hot Essential Oil Steam Shave</h4>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;">Click to expand high-res view</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="col-lg-4 col-md-6 filterable-item" data-category="studio">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Belmont Leather Barber Chairs">
+            <div class="gallery-overlay">
+              <span class="badge-gold w-auto align-self-start mb-2">STUDIO</span>
+              <h4 class="h5 gallery-title mb-1">Leather Chair Sanctuary</h4>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;">Click to expand high-res view</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="col-lg-4 col-md-6 filterable-item" data-category="products">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?auto=format&fit=crop&w=800&q=80" alt="Organic Apothecary Beard Oil Collection">
+            <div class="gallery-overlay">
+              <span class="badge-gold w-auto align-self-start mb-2">PRODUCTS</span>
+              <h4 class="h5 gallery-title mb-1">Cold-Pressed Apothecary</h4>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;">Click to expand high-res view</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="col-lg-4 col-md-6 filterable-item" data-category="haircuts">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Classic Pompadour Scissor Cut">
+            <div class="gallery-overlay">
+              <span class="badge-gold w-auto align-self-start mb-2">HAIRCUTS</span>
+              <h4 class="h5 gallery-title mb-1">Classic Textured Pompadour</h4>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;">Click to expand high-res view</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION: TRANSFORMATION SPOTLIGHTS -->
+  <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="text-center mb-5" style="max-width: 650px; margin: 0 auto;">
+        <span class="section-label">Style Architecture</span>
+        <h2 class="h1 mb-2">Transformation Spotlights</h2>
+        <p class="text-muted" style="font-size: 0.95rem;">
+          A closer look at head shape diagnosis, razor profile carving, and precision beard blending performed by our master barbers.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Transformation 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100">
+            <div>
+              <div class="service-img-wrapper" style="height: 280px;">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Executive Taper Fade Transformation">
+              </div>
+              <span class="section-label mt-3">Transformation 01</span>
+              <h3 class="h4 mb-2">Executive Taper & Weight Balance</h3>
+              <p class="text-gold font-monospace mb-3" style="font-size: 0.85rem;"><i class="bi bi-person-badge me-1"></i> Artisan: Julian Vance</p>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Crafted for high-volume dense hair. Relieved crown bulk while establishing a clean low taper for zero-maintenance executive styling.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transformation 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100">
+            <div>
+              <div class="service-img-wrapper" style="height: 280px;">
+                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Full Beard Geometry & Straight Razor Line">
+              </div>
+              <span class="section-label mt-3">Transformation 02</span>
+              <h3 class="h4 mb-2">Jawline Geometry & Beard Sculpt</h3>
+              <p class="text-gold font-monospace mb-3" style="font-size: 0.85rem;"><i class="bi bi-person-badge me-1"></i> Artisan: Thomas Thorne</p>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Reshaped uneven beard bulk into a defined masculine angular profile, finishing with hot towel steam and cheek razor line-up.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transformation 3 -->
+        <div class="col-lg-4 col-md-12">
+          <div class="service-card-editorial h-100">
+            <div>
+              <div class="service-img-wrapper" style="height: 280px;">
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Classic Razor Cut & Pompadour">
+              </div>
+              <span class="section-label mt-3">Transformation 03</span>
+              <h3 class="h4 mb-2">Textured Crop & Hot Razor Finish</h3>
+              <p class="text-gold font-monospace mb-3" style="font-size: 0.85rem;"><i class="bi bi-person-badge me-1"></i> Artisan: Marcus Sterling</p>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Replaced outgrowth with a feather-light scissor texture, complemented by essential oil scalp stimulation and razor nape detailing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL CONTAINER -->
+  <div class="lightbox-modal">
+    <div class="lightbox-content">
+      <button class="lightbox-close">&times;</button>
+      <img src="" alt="" class="lightbox-img">
+      <p class="lightbox-caption text-center text-gold mt-3 font-monospace" style="font-size: 1.1rem;"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="studio-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand & Social Icons -->
+        <div class="col-lg-3 col-md-6">
+          <a href="index.html" class="navbar-brand-logo mb-3" style="font-size: 1.6rem;">
+            <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+          </a>
+          <p class="text-muted mb-3" style="font-size: 0.88rem; line-height: 1.7;">
+            Sharp Looks. Refined Rituals. A premier men's haircutting, beard sculpting, and traditional hot towel shaving studio.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Studio</a></li>
+            <li><a href="home-2.html">Home Ritual</a></li>
+            <li><a href="services.html">Grooming Menu</a></li>
+            <li><a href="products.html">Apothecary Products</a></li>
+            <li><a href="membership.html">Memberships</a></li>
+            <li><a href="our-studio.html">Our Studio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Services -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Core Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#haircuts">Precision Haircuts</a></li>
+            <li><a href="services.html#beards">Beard Sculpting & Trims</a></li>
+            <li><a href="services.html#shaving">Hot Towel Shave Ritual</a></li>
+            <li><a href="services.html#grooming">Scalp & Facial Treatments</a></li>
+            <li><a href="service-details.html">Executive Service Package</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Studio Contact & Hours -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Studio Hours</h4>
+          <p class="text-muted mb-3" style="font-size: 0.88rem; line-height: 1.7;">
+            <strong class="text-primary d-block mb-1">Mon – Fri: 09:00 AM – 08:00 PM</strong>
+            <strong class="text-primary d-block mb-1">Saturday: 08:30 AM – 06:00 PM</strong>
+            <strong class="text-primary d-block">Sunday: Closed for Members</strong>
+          </p>
+          <div style="font-size: 0.88rem; color: var(--text-muted);">
+            <div class="mb-1"><i class="bi bi-geo-alt me-2 text-gold"></i> 742 Mercer St, Suite 400</div>
+            <div class="mb-1"><i class="bi bi-telephone me-2 text-gold"></i> (555) 892-4012</div>
+            <div><i class="bi bi-envelope me-2 text-gold"></i> concierge@ironandivory.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 IRON & IVORY Studio. All rights reserved. Premium Commercial Template.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="documentation/index.html" class="text-muted">Documentation</a>
+          <a href="#" class="text-muted">Privacy Policy</a>
+          <a href="#" class="text-muted">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

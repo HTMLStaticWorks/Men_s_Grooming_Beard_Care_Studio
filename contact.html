@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Appointment Reservations — IRON & IVORY Studio</title>
+  <meta name="description" content="Reserve your chair at Iron & Ivory Men's Grooming Studio. Studio address, opening hours, contact details, and complete online appointment enquiry form.">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- MANDATORY NAVBAR -->
+  <header class="studio-navbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <a href="index.html" class="navbar-brand-logo">
+          <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-link-item has-dropdown">
+              <a href="index.html" class="nav-link-anchor">
+                Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+              </a>
+              <div class="dropdown-panel">
+                <a href="index.html" class="dropdown-anchor">Home 1 — Studio Concept</a>
+                <a href="home-2.html" class="dropdown-anchor">Home 2 — Ritual Concept</a>
+              </div>
+            </li>
+
+            <li class="nav-link-item"><a href="services.html" class="nav-link-anchor">Services</a></li>
+
+            <li class="nav-link-item"><a href="products.html" class="nav-link-anchor">Products</a></li>
+            <li class="nav-link-item"><a href="membership.html" class="nav-link-anchor">Membership</a></li>
+            <li class="nav-link-item"><a href="our-studio.html" class="nav-link-anchor">Our Studio</a></li>
+            <li class="nav-link-item"><a href="gallery.html" class="nav-link-anchor">Gallery</a></li>
+            <li class="nav-link-item active"><a href="contact.html" class="nav-link-anchor">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="d-flex align-items-center gap-3">
+          <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle Theme">
+            <i class="bi bi-sun-fill"></i>
+          </button>
+          
+          <a href="contact.html" class="btn-primary-studio d-inline-flex nav-book-btn trigger-booking-modal">
+            Book Appointment
+          </a>
+
+          <button class="mobile-hamburger" aria-label="Open Mobile Navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="navbar-brand-logo" style="font-size: 1.4rem;">
+          <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+        </a>
+        <button class="drawer-close btn p-0 text-white" aria-label="Close Navigation">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-list">
+        <li>
+          <a href="#" class="nav-link-anchor mobile-dropdown-toggle justify-content-between">
+            Home <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="index.html" class="dropdown-anchor">Home 1 — Studio Concept</a></li>
+            <li><a href="home-2.html" class="dropdown-anchor">Home 2 — Ritual Concept</a></li>
+          </ul>
+        </li>
+
+        <li><a href="services.html" class="nav-link-anchor">Services</a></li>
+
+        <li><a href="products.html" class="nav-link-anchor">Products</a></li>
+        <li><a href="membership.html" class="nav-link-anchor">Membership</a></li>
+        <li><a href="our-studio.html" class="nav-link-anchor">Our Studio</a></li>
+        <li><a href="gallery.html" class="nav-link-anchor">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link-anchor active">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mt-4 pt-3 border-top" style="border-color: var(--border-color) !important;">
+      <a href="contact.html" class="btn-primary-studio w-100 trigger-booking-modal mb-3">
+        Book Appointment
+      </a>
+      <div class="d-flex align-items-center justify-content-between text-muted mb-2" style="font-size: 0.85rem;">
+        <span>Layout Direction:</span>
+        <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction">RTL</button>
+      </div>
+      <div class="d-flex align-items-center justify-content-between text-muted" style="font-size: 0.85rem;">
+        <span>Toggle Mode:</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- PAGE HERO -->
+  <section class="py-5" style="padding-top: 8rem !important; background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color);">
+    <div class="container text-center py-4">
+      <span class="section-label">Concierge & Reservations</span>
+      <h1 class="display-font mb-3">Book Your Next Grooming Session</h1>
+      <p class="text-lead" style="max-width: 600px; margin: 0 auto;">
+        Reserve your preferred chair, choose your master barber, and prepare for an unhurried grooming experience.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT & FORM -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row g-4 g-lg-5">
+        <!-- Studio Details Column -->
+        <div class="col-lg-5">
+          <div class="addon-card">
+            <span class="section-label">Studio Concierge</span>
+            <h3 class="h2 mb-4">Location & Hours</h3>
+
+            <div class="mb-4">
+              <h5 class="h6 text-gold mb-1"><i class="bi bi-geo-alt me-2" style="color: var(--accent-gold);"></i> Studio Address</h5>
+              <p class="text-muted mb-0" style="font-size: 0.95rem; line-height: 1.7;">
+                742 Mercer Street, Suite 400<br>
+                Metropolitan Financial District, NY 10013
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="h6 text-gold mb-1"><i class="bi bi-telephone me-2" style="color: var(--accent-gold);"></i> Direct Contact</h5>
+              <p class="text-muted mb-0" style="font-size: 0.95rem; line-height: 1.7;">
+                Phone: (555) 892-4012<br>
+                Email: concierge@ironandivory.com
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="h6 text-gold mb-1"><i class="bi bi-clock me-2" style="color: var(--accent-gold);"></i> Opening Hours</h5>
+              <p class="text-muted mb-1" style="font-size: 0.9rem;"><strong>Monday – Friday:</strong> 09:00 AM – 08:00 PM</p>
+              <p class="text-muted mb-1" style="font-size: 0.9rem;"><strong>Saturday:</strong> 08:30 AM – 06:00 PM</p>
+              <p class="text-muted mb-0" style="font-size: 0.9rem;"><strong>Sunday:</strong> Reserved for Members Only</p>
+            </div>
+
+            <!-- Social Media Connections -->
+            <div class="mb-4 pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <h5 class="h6 text-gold mb-2"><i class="bi bi-share me-2" style="color: var(--accent-gold);"></i> Follow & Connect</h5>
+              <div class="footer-social-links mt-2">
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+
+            <!-- Interactive Google Map Embed Container -->
+            <div class="mb-3 overflow-hidden" style="border: 1px solid var(--border-color); border-radius: 6px;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7742137450596!2d-74.00412802342898!3d40.72297127139178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598be2c77d07%3A0x6b8d003b5b6370!2sMercer%20St%2C%20New%20York%2C%20NY%2010013!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                width="100%" 
+                height="240" 
+                style="border:0; filter: contrast(1.05) grayscale(0.4);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Iron & Ivory Studio Map Location">
+              </iframe>
+            </div>
+
+            <a href="https://maps.google.com/?q=742+Mercer+Street+New+York+NY" target="_blank" rel="noopener" class="btn-outline-studio w-100 text-center" style="padding: 0.65rem; font-size: 0.8rem;">
+              <i class="bi bi-box-arrow-up-right me-2"></i> Get Directions on Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Appointment Form Column -->
+        <div class="col-lg-7">
+          <div class="addon-card">
+            <span class="section-label">Online Reservation</span>
+            <h3 class="h2 mb-4">Request Appointment</h3>
+
+            <form class="studio-interactive-form">
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <div class="studio-form-group">
+                    <label class="studio-form-label">Full Name *</label>
+                    <input type="text" class="studio-input" placeholder="e.g. Marcus Vance" required>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="studio-form-group">
+                    <label class="studio-form-label">Email Address *</label>
+                    <input type="email" class="studio-input" placeholder="e.g. marcus@example.com" required>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="studio-form-group">
+                    <label class="studio-form-label">Phone Number *</label>
+                    <input type="tel" class="studio-input" placeholder="+1 (555) 000-0000" required>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="studio-form-group">
+                    <label class="studio-form-label">Select Service *</label>
+                    <select class="studio-input" required>
+                      <option value="">Choose Service...</option>
+                      <option value="Haircut">Tailored Haircut ($55)</option>
+                      <option value="Beard Trim">Beard Trim & Sculpt ($45)</option>
+                      <option value="Haircut + Beard">Haircut + Beard Combo ($85)</option>
+                      <option value="Hot Towel Shave">Hot Towel Shave ($60)</option>
+                      <option value="Grooming Treatment">Grooming Facial Treatment ($65)</option>
+                      <option value="Membership Enquiry">Membership Plan Enquiry</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="studio-form-group">
+                    <label class="studio-form-label">Preferred Barber</label>
+                    <select class="studio-input">
+                      <option value="First Available">First Available Master Barber</option>
+                      <option value="Julian Vance">Julian Vance (Head Barber)</option>
+                      <option value="Thomas Thorne">Thomas Thorne (Beard Specialist)</option>
+                      <option value="Marcus Sterling">Marcus Sterling (Shaving Artisan)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="studio-form-group">
+                    <label class="studio-form-label">Preferred Date *</label>
+                    <input type="date" class="studio-input" required>
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <div class="studio-form-group">
+                    <label class="studio-form-label">Preferred Time Window *</label>
+                    <select class="studio-input" required>
+                      <option value="">Select Time Window...</option>
+                      <option value="Morning (09:00 AM - 12:00 PM)">Morning (09:00 AM - 12:00 PM)</option>
+                      <option value="Afternoon (12:00 PM - 04:00 PM)">Afternoon (12:00 PM - 04:00 PM)</option>
+                      <option value="Evening (04:00 PM - 08:00 PM)">Evening (04:00 PM - 08:00 PM)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="studio-form-group">
+                    <label class="studio-form-label">Additional Notes / Style Preferences</label>
+                    <textarea class="studio-input" rows="3" placeholder="Share any specific haircut photos or beard maintenance notes..."></textarea>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn-primary-studio w-100">
+                    Request Appointment
+                  </button>
+                  <div class="form-feedback-alert"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION: PRIVATE EVENTS & CONCIERGE GUIDELINES -->
+  <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="text-center mb-5" style="max-width: 650px; margin: 0 auto;">
+        <span class="section-label">Concierge Services</span>
+        <h2 class="h1 mb-2">Private Events & Visit Guidelines</h2>
+        <p class="text-muted" style="font-size: 0.95rem;">
+          Everything you need to know about private studio buyouts, VIP reservations, and visiting our sanctuary.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="addon-card">
+            <div>
+              <span class="badge-gold font-monospace mb-3 d-inline-block">PRIVATE EVENTS</span>
+              <h3 class="h4 mb-2">Groomsmen & Group Takeovers</h3>
+              <p class="text-muted mb-3" style="font-size: 0.88rem;">
+                Reserve the entire Iron & Ivory studio for wedding parties, executive retreats, or private celebrations with dedicated master barbers and private lounge bar service.
+              </p>
+            </div>
+            <ul class="list-unstyled text-gold font-monospace mb-0" style="font-size: 0.8rem; line-height: 1.8;">
+              <li><i class="bi bi-check2 me-1"></i> Full studio privacy & 3 master barbers</li>
+              <li><i class="bi bi-check2 me-1"></i> Complimentary tasting lounge access</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="addon-card">
+            <div>
+              <span class="badge-gold font-monospace mb-3 d-inline-block">VISIT PROTOCOL</span>
+              <h3 class="h4 mb-2">Sanctuary Experience & Timing</h3>
+              <p class="text-muted mb-3" style="font-size: 0.88rem;">
+                We recommend arriving 10 minutes prior to your reservation time to enjoy a complimentary espresso or single-malt whiskey in our leather tasting room.
+              </p>
+            </div>
+            <ul class="list-unstyled text-gold font-monospace mb-0" style="font-size: 0.8rem; line-height: 1.8;">
+              <li><i class="bi bi-check2 me-1"></i> Guaranteed zero waiting time</li>
+              <li><i class="bi bi-check2 me-1"></i> Flexible 24-hour reschedule protection</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-12">
+          <div class="addon-card">
+            <div>
+              <span class="badge-gold font-monospace mb-3 d-inline-block">GIFT CARDS</span>
+              <h3 class="h4 mb-2">Bespoke Brass Gift Certificates</h3>
+              <p class="text-muted mb-3" style="font-size: 0.88rem;">
+                Give the gift of effortless style. Available as physical laser-etched metal cards packaged in leather sleeves or instant digital concierge passes.
+              </p>
+            </div>
+            <ul class="list-unstyled text-gold font-monospace mb-0" style="font-size: 0.8rem; line-height: 1.8;">
+              <li><i class="bi bi-check2 me-1"></i> Physical weighted metal gift card</li>
+              <li><i class="bi bi-check2 me-1"></i> Valid for all services & products</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="studio-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand & Social Icons -->
+        <div class="col-lg-3 col-md-6">
+          <a href="index.html" class="navbar-brand-logo mb-3" style="font-size: 1.6rem;">
+            <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+          </a>
+          <p class="text-muted mb-3" style="font-size: 0.88rem; line-height: 1.7;">
+            Sharp Looks. Refined Rituals. A premier men's haircutting, beard sculpting, and traditional hot towel shaving studio.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Studio</a></li>
+            <li><a href="home-2.html">Home Ritual</a></li>
+            <li><a href="services.html">Grooming Menu</a></li>
+            <li><a href="products.html">Apothecary Products</a></li>
+            <li><a href="membership.html">Memberships</a></li>
+            <li><a href="our-studio.html">Our Studio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Services -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Core Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#haircuts">Precision Haircuts</a></li>
+            <li><a href="services.html#beards">Beard Sculpting & Trims</a></li>
+            <li><a href="services.html#shaving">Hot Towel Shave Ritual</a></li>
+            <li><a href="services.html#grooming">Scalp & Facial Treatments</a></li>
+            <li><a href="service-details.html">Executive Service Package</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Studio Contact & Hours -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Studio Hours</h4>
+          <p class="text-muted mb-3" style="font-size: 0.88rem; line-height: 1.7;">
+            <strong class="text-primary d-block mb-1">Mon – Fri: 09:00 AM – 08:00 PM</strong>
+            <strong class="text-primary d-block mb-1">Saturday: 08:30 AM – 06:00 PM</strong>
+            <strong class="text-primary d-block">Sunday: Closed for Members</strong>
+          </p>
+          <div style="font-size: 0.88rem; color: var(--text-muted);">
+            <div class="mb-1"><i class="bi bi-geo-alt me-2 text-gold"></i> 742 Mercer St, Suite 400</div>
+            <div class="mb-1"><i class="bi bi-telephone me-2 text-gold"></i> (555) 892-4012</div>
+            <div><i class="bi bi-envelope me-2 text-gold"></i> concierge@ironandivory.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 IRON & IVORY Studio. All rights reserved. Premium Commercial Template.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="documentation/index.html" class="text-muted">Documentation</a>
+          <a href="#" class="text-muted">Privacy Policy</a>
+          <a href="#" class="text-muted">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

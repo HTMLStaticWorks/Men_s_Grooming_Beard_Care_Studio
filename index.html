@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRON & IVORY — Men's Grooming & Beard Care Studio</title>
+  <meta name="description" content="Precision haircuts, master beard care, traditional hot towel shaves, and luxury men's skincare. Modern barbering built around sophistication and craft.">
+  
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="IRON & IVORY — Sharp Looks. Refined Rituals.">
+  <meta property="og:description" content="Precision grooming studio specializing in classic and contemporary haircuts, beard shaping, and hot towel straight-razor shaving.">
+  <meta property="og:type" content="website">
+
+  <!-- Icon Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       MANDATORY HEADER & NAVIGATION BAR
+       ========================================================================= -->
+  <header class="studio-navbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="navbar-brand-logo">
+          <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav>
+          <ul class="nav-menu">
+            <!-- Home Dropdown -->
+            <li class="nav-link-item has-dropdown active">
+              <a href="index.html" class="nav-link-anchor">
+                Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+              </a>
+              <div class="dropdown-panel">
+                <a href="index.html" class="dropdown-anchor active">Home 1 — Studio Concept</a>
+                <a href="home-2.html" class="dropdown-anchor">Home 2 — Ritual Concept</a>
+              </div>
+            </li>
+
+            <li class="nav-link-item"><a href="services.html" class="nav-link-anchor">Services</a></li>
+
+            <li class="nav-link-item"><a href="products.html" class="nav-link-anchor">Products</a></li>
+            <li class="nav-link-item"><a href="membership.html" class="nav-link-anchor">Membership</a></li>
+            <li class="nav-link-item"><a href="our-studio.html" class="nav-link-anchor">Our Studio</a></li>
+            <li class="nav-link-item"><a href="gallery.html" class="nav-link-anchor">Gallery</a></li>
+            <li class="nav-link-item"><a href="contact.html" class="nav-link-anchor">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions: Theme & RTL Toggle & Book CTA -->
+        <div class="d-flex align-items-center gap-3">
+          <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle Theme">
+            <i class="bi bi-sun-fill"></i>
+          </button>
+          
+          <a href="contact.html" class="btn-primary-studio d-inline-flex nav-book-btn trigger-booking-modal">
+            Book Appointment
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button class="mobile-hamburger" aria-label="Open Mobile Navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Panel -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="navbar-brand-logo" style="font-size: 1.4rem;">
+          <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+        </a>
+        <button class="drawer-close btn p-0 text-white" aria-label="Close Navigation">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-list">
+        <li>
+          <a href="#" class="nav-link-anchor mobile-dropdown-toggle justify-content-between">
+            Home <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="mobile-dropdown-menu">
+            <li><a href="index.html" class="dropdown-anchor">Home 1 — Studio Concept</a></li>
+            <li><a href="home-2.html" class="dropdown-anchor">Home 2 — Ritual Concept</a></li>
+          </ul>
+        </li>
+
+        <li><a href="services.html" class="nav-link-anchor">Services</a></li>
+
+        <li><a href="products.html" class="nav-link-anchor">Products</a></li>
+        <li><a href="membership.html" class="nav-link-anchor">Membership</a></li>
+        <li><a href="our-studio.html" class="nav-link-anchor">Our Studio</a></li>
+        <li><a href="gallery.html" class="nav-link-anchor">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link-anchor">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mt-4 pt-3 border-top" style="border-color: var(--border-color) !important;">
+      <a href="contact.html" class="btn-primary-studio w-100 trigger-booking-modal mb-3">
+        Book Appointment
+      </a>
+      <div class="d-flex align-items-center justify-content-between text-muted mb-2" style="font-size: 0.85rem;">
+        <span>Layout Direction:</span>
+        <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction">RTL</button>
+      </div>
+      <div class="d-flex align-items-center justify-content-between text-muted" style="font-size: 0.85rem;">
+        <span>Toggle Mode:</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       HERO SECTION — CINEMATIC GROOMING
+       ========================================================================= -->
+  <section class="hero-cinematic">
+    <div class="hero-bg-overlay" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="hero-gradient-mask"></div>
+
+    <div class="container hero-content text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+          <span class="section-label d-inline-block mb-3">Sharp Looks. Refined Rituals.</span>
+          <h1 class="mb-4">Precision Grooming.<br>Built Around You.</h1>
+          <p class="text-lead mb-5 mx-auto text-center" style="max-width: 680px; text-align: center;">
+            Modern barbering, timeless grooming rituals, and premium beard care tailored for men who appreciate meticulous craftsmanship and quiet confidence.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center mb-4">
+            <a href="contact.html" class="btn-primary-studio trigger-booking-modal">
+              Book an Appointment <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="services.html" class="btn-outline-studio">
+              Explore Services
+            </a>
+          </div>
+
+          <!-- Trust Indicators -->
+          <div class="trust-strip justify-content-center flex-wrap">
+            <span>Expert Master Barbers</span>
+            <span>Organic Beard Oils</span>
+            <span>Tailored Grooming Rituals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SIGNATURE GROOMING SERVICES
+       ========================================================================= -->
+  <section class="py-5" style="padding-top: 6rem !important; padding-bottom: 6rem !important;">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+        <div>
+          <span class="section-label">Master Crafts</span>
+          <h2>Signature Services</h2>
+        </div>
+        <a href="services.html" class="btn-outline-studio" style="padding: 0.6rem 1.5rem; font-size: 0.75rem;">
+          View Full Menu <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card-editorial">
+            <div>
+              <div class="service-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80" alt="Precision Haircuts at Iron & Ivory">
+              </div>
+              <span class="service-number">01 / HAIRCUTS</span>
+              <h3 class="h4 mb-2">Tailored Haircut</h3>
+              <p class="text-muted" style="font-size: 0.9rem;">
+                Scissor & clipper work customized to your face shape, hair density, and lifestyle.
+              </p>
+            </div>
+            <div>
+              <div class="service-price">From $55</div>
+              <a href="service-details.html" class="btn-outline-studio w-100 mt-3" style="padding: 0.6rem; font-size: 0.75rem;">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card-editorial">
+            <div>
+              <div class="service-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80" alt="Beard Shaping and Sculpting">
+              </div>
+              <span class="service-number">02 / BEARD CARE</span>
+              <h3 class="h4 mb-2">Beard Sculpt & Trim</h3>
+              <p class="text-muted" style="font-size: 0.9rem;">
+                Meticulous line-ups, density blending, cheek razor work, and hot oil conditioning.
+              </p>
+            </div>
+            <div>
+              <div class="service-price">From $45</div>
+              <a href="service-details.html" class="btn-outline-studio w-100 mt-3" style="padding: 0.6rem; font-size: 0.75rem;">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card-editorial">
+            <div>
+              <div class="service-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Traditional Hot Towel Straight Razor Shave">
+              </div>
+              <span class="service-number">03 / TRADITIONAL</span>
+              <h3 class="h4 mb-2">Hot Towel Shave</h3>
+              <p class="text-muted" style="font-size: 0.9rem;">
+                Steamed essential oil towel prep, rich lathering, straight razor pass, and cooling balm.
+              </p>
+            </div>
+            <div>
+              <div class="service-price">From $60</div>
+              <a href="service-details.html" class="btn-outline-studio w-100 mt-3" style="padding: 0.6rem; font-size: 0.75rem;">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card-editorial">
+            <div>
+              <div class="service-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=600&q=80" alt="Scalp & Skincare Treatments for Men">
+              </div>
+              <span class="service-number">04 / SKIN & SCALP</span>
+              <h3 class="h4 mb-2">Facial & Scalp Ritual</h3>
+              <p class="text-muted" style="font-size: 0.9rem;">
+                Exfoliating botanical cleansers, scalp massage, hydrating serum, and neck rejuvenation.
+              </p>
+            </div>
+            <div>
+              <div class="service-price">From $75</div>
+              <a href="service-details.html" class="btn-outline-studio w-100 mt-3" style="padding: 0.6rem; font-size: 0.75rem;">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       THE IRON & IVORY EXPERIENCE (PHILOSOPHY)
+       ========================================================================= -->
+  <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="editorial-img-frame">
+            <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1000&q=80" alt="Craftsmanship and Barbershop Precision Tools">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <span class="section-label">Studio Philosophy</span>
+          <h2 class="mb-4">Every Detail Matters.</h2>
+          <p class="text-lead mb-4">
+            We believe men's grooming is not a hasty errand — it is a personal ritual of rejuvenation, precision, and self-respect.
+          </p>
+
+          <div class="row g-4 mt-2">
+            <div class="col-sm-6">
+              <h4 class="h5 text-gold mb-2"><i class="bi bi-compass me-2" style="color: var(--accent-gold);"></i> 1-on-1 Consultation</h4>
+              <p class="text-muted" style="font-size: 0.88rem;">Every service begins with a thorough diagnosis of hair growth patterns, skin sensitivity, and personal aesthetic goals.</p>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="h5 text-gold mb-2"><i class="bi bi-scissors me-2" style="color: var(--accent-gold);"></i> Master Craftsmanship</h4>
+              <p class="text-muted" style="font-size: 0.88rem;">Our barbers possess decades of combined mastery in Japanese steel scissor work and straight-razor ergonomics.</p>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="h5 text-gold mb-2"><i class="bi bi-droplet-half me-2" style="color: var(--accent-gold);"></i> Botanical Formulations</h4>
+              <p class="text-muted" style="font-size: 0.88rem;">We exclusively apply cold-pressed jojoba, cedarwood, and sandalwood elixirs crafted for male skin biology.</p>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="h5 text-gold mb-2"><i class="bi bi-cup-hot me-2" style="color: var(--accent-gold);"></i> Private Lounge</h4>
+              <p class="text-muted" style="font-size: 0.88rem;">Enjoy complimentary single-malt scotch, cold-brew espresso, and curated music in our quiet leather sanctuary.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       COMBINATION PACKAGES
+       ========================================================================= -->
+  <section class="py-5" style="padding-top: 6rem !important;">
+    <div class="container">
+      <div class="text-center mb-5" style="max-width: 700px; margin: 0 auto;">
+        <span class="section-label">Curated Experience</span>
+        <h2>Haircut & Beard Combinations</h2>
+        <p class="text-muted">Combining haircut, beard sculpt, and hot towel treatments for maximum synergy and value.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Combo 1 -->
+        <div class="col-lg-4">
+          <div class="service-card-editorial">
+            <div>
+              <span class="badge-gold mb-3">Popular Choice</span>
+              <h3 class="h3 mb-2">The Signature</h3>
+              <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">
+                Custom Precision Haircut + Complete Beard Trim & Line-up with hot oil treatment.
+              </p>
+
+              <ul class="list-unstyled text-muted mb-4" style="font-size: 0.9rem;">
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Scalp cleansing & consultation</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Scissor & clipper hair styling</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Beard shape contouring</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Hot towel neck finish</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="d-flex align-items-baseline justify-content-between pt-3 border-top" style="border-color: var(--border-color) !important;">
+                <span class="text-muted" style="font-size: 0.85rem;"><i class="bi bi-clock me-1"></i> 60 Mins</span>
+                <span class="service-price">$85</span>
+              </div>
+              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Signature ($85)">
+                Book Combination
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Combo 2 -->
+        <div class="col-lg-4">
+          <div class="service-card-editorial" style="border-color: var(--accent-gold);">
+            <div>
+              <span class="badge-gold mb-3" style="background: var(--accent-gold); color: #000;">Executive Ritual</span>
+              <h3 class="h3 mb-2">The Executive</h3>
+              <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">
+                Full Haircut + Beard Sculpting + Straight Razor Cheek Pass + Express Scalp Treatment.
+              </p>
+
+              <ul class="list-unstyled text-muted mb-4" style="font-size: 0.9rem;">
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Everything in Signature package</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Straight razor line sharpness</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Organic beard balm massage</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Hair styling with clay/pomade</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="d-flex align-items-baseline justify-content-between pt-3 border-top" style="border-color: var(--border-color) !important;">
+                <span class="text-muted" style="font-size: 0.85rem;"><i class="bi bi-clock me-1"></i> 75 Mins</span>
+                <span class="service-price">$110</span>
+              </div>
+              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Executive ($110)">
+                Book Combination
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Combo 3 -->
+        <div class="col-lg-4">
+          <div class="service-card-editorial">
+            <div>
+              <span class="badge-gold mb-3">Ultimate Care</span>
+              <h3 class="h3 mb-2">The Ritual</h3>
+              <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">
+                Haircut + Full Hot Towel Shave / Beard Restoration + Deep Facial Cleansing & Scalp Massage.
+              </p>
+
+              <ul class="list-unstyled text-muted mb-4" style="font-size: 0.9rem;">
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Complete Haircut & Styling</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Double Hot Towel Shave ritual</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Botanical facial steam cleanse</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Complimentary lounge beverage</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="d-flex align-items-baseline justify-content-between pt-3 border-top" style="border-color: var(--border-color) !important;">
+                <span class="text-muted" style="font-size: 0.85rem;"><i class="bi bi-clock me-1"></i> 90 Mins</span>
+                <span class="service-price">$140</span>
+              </div>
+              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Ritual ($140)">
+                Book Combination
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       HOT TOWEL SHAVE FEATURE (DARK SPOTLIGHT)
+       ========================================================================= -->
+  <section class="dark-spotlight-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="section-label">Timeless Artistry</span>
+          <h2 class="mb-4">The Original Grooming Ritual.</h2>
+          <p class="text-lead mb-4">
+            Experience the soothing warmth of essential oil steamed towels and the unparalleled precision of a hand-honed straight razor.
+          </p>
+
+          <div class="ritual-step-item">
+            <span class="step-num">01</span>
+            <div>
+              <h5 class="mb-1">Warm Essential Towel</h5>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Opens pores and softens stubborn whiskers with eucalyptus infusion.</p>
+            </div>
+          </div>
+
+          <div class="ritual-step-item">
+            <span class="step-num">02</span>
+            <div>
+              <h5 class="mb-1">Rich Botanical Lather</h5>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Whipped badger-hair brush application of coconut & tallow shave cream.</p>
+            </div>
+          </div>
+
+          <div class="ritual-step-item">
+            <span class="step-num">03</span>
+            <div>
+              <h5 class="mb-1">Japanese Steel Razor Pass</h5>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Dual-directional glides executed with absolute mathematical precision.</p>
+            </div>
+          </div>
+
+          <div class="ritual-step-item">
+            <span class="step-num">04</span>
+            <div>
+              <h5 class="mb-1">Cooling Aftershave Elixir</h5>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Witch hazel, aloe vera, and sandalwood balm to eliminate irritation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="editorial-img-frame">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=80" alt="Hot Towel Straight Razor Shaving Ritual">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PRODUCTS PREVIEW SHOWCASE
+       ========================================================================= -->
+  <section class="py-5" style="padding-top: 6rem !important;">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+        <div>
+          <span class="section-label">Apothecary</span>
+          <h2>Studio Product Collection</h2>
+        </div>
+        <a href="products.html" class="btn-outline-studio" style="padding: 0.6rem 1.5rem; font-size: 0.75rem;">
+          View All Products <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-thumb">
+              <span class="badge-gold" style="position: absolute; top: 12px; left: 12px;">Best Seller</span>
+              <img src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?auto=format&fit=crop&w=500&q=80" alt="Signature Beard Elixir Oil">
+            </div>
+            <div>
+              <span class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-mono);">BEARD CARE</span>
+              <h4 class="h5 mb-1"><a href="product-details.html">Signature Beard Oil</a></h4>
+              <p class="text-muted mb-3" style="font-size: 0.85rem;">Cold-pressed jojoba, argan, and sandalwood elixir.</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between pt-2 border-top" style="border-color: var(--border-color) !important;">
+              <span class="product-price">$38.00</span>
+              <a href="product-details.html" class="btn-outline-studio" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=500&q=80" alt="Matte Finish Hair Clay">
+            </div>
+            <div>
+              <span class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-mono);">STYLING</span>
+              <h4 class="h5 mb-1"><a href="product-details.html">Matte Styling Clay</a></h4>
+              <p class="text-muted mb-3" style="font-size: 0.85rem;">High hold, zero shine natural bentonite clay paste.</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between pt-2 border-top" style="border-color: var(--border-color) !important;">
+              <span class="product-price">$32.00</span>
+              <a href="product-details.html" class="btn-outline-studio" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Beard Conditioning Balm">
+            </div>
+            <div>
+              <span class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-mono);">BEARD CARE</span>
+              <h4 class="h5 mb-1"><a href="product-details.html">Nourishing Beard Balm</a></h4>
+              <p class="text-muted mb-3" style="font-size: 0.85rem;">Shea butter & beeswax for control and beard softness.</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between pt-2 border-top" style="border-color: var(--border-color) !important;">
+              <span class="product-price">$34.00</span>
+              <a href="product-details.html" class="btn-outline-studio" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=500&q=80" alt="Botanical Aftershave Tonic">
+            </div>
+            <div>
+              <span class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-mono);">SHAVING</span>
+              <h4 class="h5 mb-1"><a href="product-details.html">Calming Aftershave Splash</a></h4>
+              <p class="text-muted mb-3" style="font-size: 0.85rem;">Witch hazel & cedarwood anti-burn toning elixir.</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between pt-2 border-top" style="border-color: var(--border-color) !important;">
+              <span class="product-price">$29.00</span>
+              <a href="product-details.html" class="btn-outline-studio" style="padding: 0.4rem 0.8rem; font-size: 0.7rem;">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MEMBERSHIP PREVIEW
+       ========================================================================= -->
+  <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-label">Grooming Subscriptions</span>
+          <h2 class="mb-4">Stay Sharp, All Year.</h2>
+          <p class="text-lead mb-4">
+            Designed for gentlemen who consider regular maintenance essential to their personal image. Enjoy preferred scheduling and exclusive member perks.
+          </p>
+
+          <ul class="list-unstyled mb-4" style="line-height: 2;">
+            <li><i class="bi bi-check-circle-fill text-gold me-2" style="color: var(--accent-gold);"></i> Guaranteed priority weekend & evening reservations</li>
+            <li><i class="bi bi-check-circle-fill text-gold me-2" style="color: var(--accent-gold);"></i> Unlimited complimentary neck & beard line touch-ups</li>
+            <li><i class="bi bi-check-circle-fill text-gold me-2" style="color: var(--accent-gold);"></i> 15% discount across all apothecary products</li>
+            <li><i class="bi bi-check-circle-fill text-gold me-2" style="color: var(--accent-gold);"></i> Exclusive access to private studio lounge tasting events</li>
+          </ul>
+
+          <a href="membership.html" class="btn-primary-studio">
+            Explore Membership Plans <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="pricing-card featured">
+            <div>
+              <span class="section-label">Signature Tier</span>
+              <h3 class="h2 mb-1">Monthly Grooming</h3>
+              <p class="text-muted" style="font-size: 0.9rem;">Ideal for bi-weekly haircuts & beard maintenance.</p>
+
+              <div class="pricing-amount">
+                $120 <span>/ month</span>
+              </div>
+
+              <ul class="pricing-feature-list">
+                <li><i class="bi bi-check2"></i> 2 Full Precision Haircuts per month</li>
+                <li><i class="bi bi-check2"></i> 2 Beard Sculpting or Shave treatments</li>
+                <li><i class="bi bi-check2"></i> Priority booking slot protection</li>
+                <li><i class="bi bi-check2"></i> 1 Free product of choice per quarter</li>
+              </ul>
+            </div>
+
+            <a href="membership.html" class="btn-outline-studio w-100 mt-3 text-center">
+              View All 3 Tiers
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TESTIMONIALS
+       ========================================================================= -->
+  <section class="py-5" style="padding-top: 6rem !important;">
+    <div class="container">
+      <div class="text-center mb-5" style="max-width: 600px; margin: 0 auto;">
+        <span class="section-label">Client Endorsements</span>
+        <h2>What Gentlemen Say</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Review 1 -->
+        <div class="col-lg-4">
+          <div class="service-card-editorial">
+            <div>
+              <div class="text-gold mb-3" style="color: var(--accent-gold);">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4" style="font-style: italic; color: var(--text-secondary); font-size: 0.95rem;">
+                "Finding a barber who actually understands face symmetry and beard density is rare. Iron & Ivory delivers executive precision every single visit."
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <div style="width: 44px; height: 44px; background: var(--bg-tertiary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--accent-gold);">
+                MC
+              </div>
+              <div>
+                <h5 class="h6 mb-0">Marcus Vance</h5>
+                <small class="text-muted">Architect & Studio Client</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-lg-4">
+          <div class="service-card-editorial">
+            <div>
+              <div class="text-gold mb-3" style="color: var(--accent-gold);">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4" style="font-style: italic; color: var(--text-secondary); font-size: 0.95rem;">
+                "The Hot Towel Shave is unmatched. The atmosphere feels like a classic private club where you can relax completely while getting groomed."
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <div style="width: 44px; height: 44px; background: var(--bg-tertiary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--accent-gold);">
+                JD
+              </div>
+              <div>
+                <h5 class="h6 mb-0">Julian Drake</h5>
+                <small class="text-muted">Creative Director</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-lg-4">
+          <div class="service-card-editorial">
+            <div>
+              <div class="text-gold mb-3" style="color: var(--accent-gold);">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-4" style="font-style: italic; color: var(--text-secondary); font-size: 0.95rem;">
+                "I've held a Signature Membership for 8 months. Priority booking and their organic beard oil have completely transformed my beard maintenance routine."
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <div style="width: 44px; height: 44px; background: var(--bg-tertiary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--accent-gold);">
+                HA
+              </div>
+              <div>
+                <h5 class="h6 mb-0">Harrison Sterling</h5>
+                <small class="text-muted">Financial Consultant</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FINAL CTA
+       ========================================================================= -->
+  <section class="py-5 text-center" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+    <div class="container py-5">
+      <div style="max-width: 700px; margin: 0 auto;">
+        <span class="section-label">Reserve Your Seat</span>
+        <h2 class="display-font mb-4" style="font-size: clamp(2.2rem, 4vw, 3.5rem);">Your Next Look Starts Here.</h2>
+        <p class="text-lead mb-5">
+          Step into our chair and experience modern haircutting and beard grooming crafted to perfection.
+        </p>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="contact.html" class="btn-primary-studio trigger-booking-modal">
+            Book Appointment Now <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="membership.html" class="btn-outline-studio">
+            Explore Membership
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       UNIVERSAL APPOINTMENT BOOKING MODAL
+       ========================================================================= -->
+  <div class="lightbox-modal booking-modal-wrapper" style="z-index: 2500;">
+    <div class="lightbox-content" style="max-width: 620px; width: 100%; background: var(--bg-card); padding: 2.5rem 2rem; border: 1px solid var(--accent-gold); border-radius: 6px; position: relative; max-height: 90vh; overflow-y: auto;">
+      <button class="booking-modal-close" style="position: absolute; top: 18px; right: 22px; background: none; border: none; color: var(--text-primary); font-size: 1.8rem; cursor: pointer;">
+        &times;
+      </button>
+
+      <span class="section-label">Online Enquiry</span>
+      <h3 class="mb-4">Book Your Grooming Session</h3>
+
+      <form class="studio-interactive-form">
+        <div class="row g-4">
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Full Name *</label>
+              <input type="text" class="studio-input" placeholder="e.g. Julian Vance" required>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Email Address *</label>
+              <input type="email" class="studio-input" placeholder="e.g. julian@example.com" required>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Phone Number *</label>
+              <input type="tel" class="studio-input" placeholder="+1 (555) 000-0000" required>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Select Service *</label>
+              <select name="service" class="studio-input" required>
+                <option value="">Choose Service...</option>
+                <option value="Tailored Haircut">Tailored Haircut ($55)</option>
+                <option value="Beard Sculpt & Trim">Beard Sculpt & Trim ($45)</option>
+                <option value="Hot Towel Shave">Hot Towel Shave ($60)</option>
+                <option value="The Signature Combo">The Signature Combo ($85)</option>
+                <option value="The Executive Ritual">The Executive Ritual ($110)</option>
+                <option value="The Ritual Ultimate">The Ritual Ultimate ($140)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Preferred Date *</label>
+              <input type="date" class="studio-input" required>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Preferred Time *</label>
+              <select class="studio-input" required>
+                <option value="">Select Time...</option>
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="02:00 PM">02:00 PM</option>
+                <option value="04:30 PM">04:30 PM</option>
+                <option value="06:30 PM">06:30 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Special Notes / Requests</label>
+              <textarea class="studio-input" rows="3" placeholder="Mention any specific haircut requirements or barber preference..."></textarea>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn-primary-studio w-100">
+              Confirm Appointment Request
+            </button>
+            <div class="form-feedback-alert"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="studio-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand & Social Icons -->
+        <div class="col-lg-3 col-md-6">
+          <a href="index.html" class="navbar-brand-logo mb-3" style="font-size: 1.6rem;">
+            <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
+          </a>
+          <p class="text-muted mb-3" style="font-size: 0.88rem; line-height: 1.7;">
+            Sharp Looks. Refined Rituals. A premier men's haircutting, beard sculpting, and traditional hot towel shaving studio.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Studio</a></li>
+            <li><a href="home-2.html">Home Ritual</a></li>
+            <li><a href="services.html">Grooming Menu</a></li>
+            <li><a href="products.html">Apothecary Products</a></li>
+            <li><a href="membership.html">Memberships</a></li>
+            <li><a href="our-studio.html">Our Studio</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Services -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Core Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#haircuts">Precision Haircuts</a></li>
+            <li><a href="services.html#beards">Beard Sculpting & Trims</a></li>
+            <li><a href="services.html#shaving">Hot Towel Shave Ritual</a></li>
+            <li><a href="services.html#grooming">Scalp & Facial Treatments</a></li>
+            <li><a href="service-details.html">Executive Service Package</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Studio Contact & Hours -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Studio Hours</h4>
+          <p class="text-muted mb-3" style="font-size: 0.88rem; line-height: 1.7;">
+            <strong class="text-primary d-block mb-1">Mon – Fri: 09:00 AM – 08:00 PM</strong>
+            <strong class="text-primary d-block mb-1">Saturday: 08:30 AM – 06:00 PM</strong>
+            <strong class="text-primary d-block">Sunday: Closed for Members</strong>
+          </p>
+          <div style="font-size: 0.88rem; color: var(--text-muted);">
+            <div class="mb-1"><i class="bi bi-geo-alt me-2 text-gold"></i> 742 Mercer St, Suite 400</div>
+            <div class="mb-1"><i class="bi bi-telephone me-2 text-gold"></i> (555) 892-4012</div>
+            <div><i class="bi bi-envelope me-2 text-gold"></i> concierge@ironandivory.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 IRON & IVORY Studio. All rights reserved. Premium Commercial Template.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="documentation/index.html" class="text-muted">Documentation</a>
+          <a href="#" class="text-muted">Privacy Policy</a>
+          <a href="#" class="text-muted">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- JS Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

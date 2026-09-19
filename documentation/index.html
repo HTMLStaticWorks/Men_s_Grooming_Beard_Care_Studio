@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation — IRON & IVORY Commercial Template</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Favicon & Theme -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body style="padding-top: 5rem;">
+
+  <!-- HEADER -->
+  <header class="studio-navbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="../index.html" class="navbar-brand-logo">
+          <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY <small class="ms-2 text-gold fs-6 font-monospace">DOCS v1.0</small>
+        </a>
+        <a href="../index.html" class="btn-outline-studio" style="padding: 0.4rem 1rem; font-size: 0.75rem;">
+          <i class="bi bi-arrow-left me-1"></i> Return to Live Site
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- DOCS BODY -->
+  <div class="container py-5">
+    <div class="row g-5">
+      <!-- Sidebar Navigation -->
+      <div class="col-lg-3">
+        <div class="p-3 position-sticky" style="top: 90px; background-color: var(--bg-card); border: 1px solid var(--border-color);">
+          <span class="section-label">Documentation</span>
+          <h4 class="h5 mb-3">Quick Navigation</h4>
+          <ul class="list-unstyled" style="line-height: 2; font-size: 0.9rem;">
+            <li><a href="#overview" class="text-gold">1. Template Overview</a></li>
+            <li><a href="#structure" class="text-gold">2. File Structure</a></li>
+            <li><a href="#theme" class="text-gold">3. Theme Engine & Colors</a></li>
+            <li><a href="#typography" class="text-gold">4. Typography Setup</a></li>
+            <li><a href="#components" class="text-gold">5. JS Hooks & Modals</a></li>
+            <li><a href="#deployment" class="text-gold">6. Deployment & Credits</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-lg-9">
+        
+        <!-- Overview -->
+        <section id="overview" class="mb-5 pb-4 border-bottom" style="border-color: var(--border-color) !important;">
+          <span class="section-label">Getting Started</span>
+          <h2 class="display-font mb-3">Template Overview</h2>
+          <p class="text-muted">
+            <strong>IRON & IVORY</strong> is a commercial-grade, fully responsive HTML5/CSS3/Vanilla JS website template meticulously engineered for high-end Men's Grooming Studios, Master Barbershops, Beard Care Brands, and Grooming Membership Clubs.
+          </p>
+          <div class="p-3" style="background-color: var(--bg-card); border: 1px solid var(--accent-gold);">
+            <strong class="text-gold d-block mb-1"><i class="bi bi-star-fill me-1"></i> Theme Standards</strong>
+            <span class="text-muted" style="font-size: 0.88rem;">Built with zero framework lock-in, crisp typography hierarchy, CSS root variables for instant light/dark mode switching, and zero missing image fallbacks.</span>
+          </div>
+        </section>
+
+        <!-- Structure -->
+        <section id="structure" class="mb-5 pb-4 border-bottom" style="border-color: var(--border-color) !important;">
+          <span class="section-label">Architecture</span>
+          <h2 class="display-font mb-3">File Structure</h2>
+          <pre class="p-3" style="background-color: var(--bg-card); border: 1px solid var(--border-color); color: var(--accent-gold); font-family: var(--font-mono); font-size: 0.85rem;">
+Men_s_Grooming_Beard_Care_Studio/
+├── index.html            # Home 1 - Studio Concept
+├── home-2.html           # Home 2 - Grooming Ritual Concept
+├── services.html         # Services Menu & Filter Tabs
+├── service-details.html  # Single Service Deep-Dive
+├── products.html         # Apothecary Product Showcase
+├── product-details.html  # Product Detail View & Usage
+├── membership.html       # Monthly Subscription Tiers
+├── our-studio.html       # Brand Story & Master Barbers
+├── gallery.html          # Portfolio Grid & Lightbox Modal
+├── contact.html          # Appointment Booking Form & Contact
+├── 404.html              # Branded 404 Error Page
+├── coming-soon.html      # Launch Teaser & Email Alert
+├── README.md             # Project Guide
+├── documentation/
+│   └── index.html        # Commercial Documentation
+└── assets/
+    ├── css/
+    │   ├── bootstrap.min.css # Clean Grid Utilities
+    │   └── style.css         # Master Design System & CSS Variables
+    └── js/
+        ├── bootstrap.bundle.min.js
+        ├── gsap.min.js       # Smooth entrance animations
+        └── main.js           # Theme switcher, Mobile Nav, Modals, Forms
+          </pre>
+        </section>
+
+        <!-- Theme & Layout Engine -->
+        <section id="theme" class="mb-5 pb-4 border-bottom" style="border-color: var(--border-color) !important;">
+          <span class="section-label">Color & Layout Tokens</span>
+          <h2 class="display-font mb-3">Theme & RTL Engine</h2>
+          <p class="text-muted">
+            The template features built-in <strong>Light/Dark Mode</strong> switching and full <strong>Right-to-Left (RTL)</strong> layout support for languages like Arabic and Hebrew, toggled via dedicated navbar controls and persisted in <code>localStorage</code>:
+          </p>
+          <pre class="p-3" style="background-color: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-primary); font-family: var(--font-mono); font-size: 0.82rem;">
+:root {
+  --bg-primary: #0D0D0F;       /* Dark Obsidian */
+  --bg-secondary: #141417;     /* Charcoal Dark */
+  --accent-gold: #C5A059;      /* Muted Gold Accent */
+  --text-primary: #F4F2ED;     /* Warm Ivory Text */
+}
+
+/* RTL Layout Mode */
+html[dir="rtl"] {
+  /* Flips alignment, paddings, margins, icons, and drawer navigation automatically */
+}
+          </pre>
+        </section>
+
+        <!-- JS Hooks -->
+        <section id="components" class="mb-5 pb-4 border-bottom" style="border-color: var(--border-color) !important;">
+          <span class="section-label">Interactive Features</span>
+          <h2 class="display-font mb-3">JavaScript Modules</h2>
+          <ul class="list-unstyled text-muted" style="line-height: 2;">
+            <li><strong class="text-gold">Theme Switcher:</strong> Automatically persists user choice in <code>localStorage</code> under key <code>'iron_ivory_theme'</code>.</li>
+            <li><strong class="text-gold">Appointment Booking Modal:</strong> Opened by any HTML element containing class <code>.trigger-booking-modal</code>. Pass pre-selected service using <code>data-service="Service Name"</code>.</li>
+            <li><strong class="text-gold">Category Filters:</strong> Applied dynamically to elements with <code>.filterable-item</code> and <code>data-category="..."</code>.</li>
+          </ul>
+        </section>
+
+        <!-- Deployment -->
+        <section id="deployment">
+          <span class="section-label">Publishing</span>
+          <h2 class="display-font mb-3">Deployment & Credits</h2>
+          <p class="text-muted">
+            This template is production-ready for static hosting platforms (Netlify, Vercel, GitHub Pages, Cloudflare Pages) or any standard Linux/Apache/Nginx server.
+          </p>
+          <p class="text-muted" style="font-size: 0.85rem;">
+            &copy; 2026 IRON & IVORY Studio. Designed for ThemeForest / TemplateMonster commercial standard.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
