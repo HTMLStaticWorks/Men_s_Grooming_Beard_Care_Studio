@@ -1527,3 +1527,162 @@ html[dir="rtl"] .trust-strip {
     height: 240px;
   }
 }
+
+/* --------------------------------------------------------------------------
+   FAQ & ACCORDION DROPDOWN STYLING (DUAL LIGHT / DARK MODE COMPATIBLE)
+   -------------------------------------------------------------------------- */
+.studio-faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.accordion-item {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-normal) !important;
+  margin-bottom: 0.85rem;
+}
+
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-item:hover,
+.accordion-item:focus-within {
+  border-color: var(--border-active) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.accordion-header {
+  margin: 0;
+}
+
+.accordion-button {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  padding: 1.2rem 1.4rem;
+  border: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none !important;
+  transition: color var(--transition-fast), background-color var(--transition-fast) !important;
+}
+
+.accordion-button:hover {
+  color: var(--accent-gold) !important;
+  background-color: var(--accent-soft) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--accent-gold) !important;
+  background-color: var(--accent-soft) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  box-shadow: none !important;
+}
+
+/* Custom chevron animation badge replacing bootstrap default icon */
+.accordion-button::after {
+  display: none !important;
+}
+
+.faq-chevron-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50%;
+  background-color: var(--accent-soft);
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  margin-left: 1rem;
+  transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.accordion-button:hover .faq-chevron-badge {
+  background-color: var(--accent-gold);
+  color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) .faq-chevron-badge {
+  transform: rotate(180deg);
+  background-color: var(--accent-gold);
+  color: #ffffff;
+}
+
+.accordion-body {
+  background-color: var(--bg-card) !important;
+  color: var(--text-secondary) !important;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  padding: 1.25rem 1.4rem 1.4rem 1.4rem !important;
+  border-top: none;
+}
+
+.accordion-collapse {
+  transition: all var(--transition-normal);
+}
+
+.accordion-collapse:not(.show) {
+  display: none !important;
+}
+
+.accordion-collapse.show {
+  display: block !important;
+}
+
+/* Light & Dark Theme explicit color adjustments for FAQ cards */
+[data-theme="light"] .accordion-item {
+  background-color: #FFFFFF !important;
+  border-color: rgba(20, 20, 22, 0.12) !important;
+}
+
+[data-theme="light"] .accordion-button {
+  background-color: #FFFFFF !important;
+  color: #141416 !important;
+}
+
+[data-theme="light"] .accordion-button:not(.collapsed) {
+  background-color: rgba(158, 123, 59, 0.08) !important;
+  color: #9E7B3B !important;
+}
+
+[data-theme="light"] .accordion-body {
+  background-color: #FFFFFF !important;
+  color: #4A4A52 !important;
+}
+
+[data-theme="dark"] .accordion-item {
+  background-color: var(--bg-card) !important;
+  border-color: rgba(244, 242, 237, 0.1) !important;
+}
+
+[data-theme="dark"] .accordion-button {
+  background-color: var(--bg-card) !important;
+  color: #F4F2ED !important;
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+  background-color: rgba(197, 160, 89, 0.12) !important;
+  color: #C5A059 !important;
+}
+
+[data-theme="dark"] .accordion-body {
+  background-color: var(--bg-card) !important;
+  color: #A3A3AC !important;
+}
+

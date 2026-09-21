@@ -251,14 +251,34 @@
           <div>
             <h2 class="h3 mb-4">Frequently Asked Questions</h2>
             
-            <div class="mb-3">
-              <h4 class="h5 text-primary mb-1">How long does my hair and beard need to be?</h4>
-              <p class="text-muted" style="font-size: 0.9rem;">This service works for all lengths, from short skin fades with light stubble to longer classic hairstyles with full chest-length beards.</p>
-            </div>
+            <div class="accordion studio-faq-accordion" id="serviceFaqAccordion">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="serviceFaqHeadingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#svcCollapseOne" aria-expanded="true" aria-controls="svcCollapseOne">
+                    <span>How long does my hair and beard need to be?</span>
+                    <span class="faq-chevron-badge"><i class="bi bi-chevron-down"></i></span>
+                  </button>
+                </h4>
+                <div id="svcCollapseOne" class="accordion-collapse collapse show" aria-labelledby="serviceFaqHeadingOne" data-bs-parent="#serviceFaqAccordion">
+                  <div class="accordion-body">
+                    This executive service works for all hair lengths and beard textures, from short skin fades with light stubble to longer classic hairstyles with full chest-length beards.
+                  </div>
+                </div>
+              </div>
 
-            <div class="mb-3">
-              <h4 class="h5 text-primary mb-1">Is a straight razor shave included?</h4>
-              <p class="text-muted" style="font-size: 0.9rem;">Yes, straight-razor detailing on the cheek lines and back of the neck with hot essential oil steam towels is fully included.</p>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="serviceFaqHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svcCollapseTwo" aria-expanded="false" aria-controls="svcCollapseTwo">
+                    <span>Is a straight razor shave & hot towel included?</span>
+                    <span class="faq-chevron-badge"><i class="bi bi-chevron-down"></i></span>
+                  </button>
+                </h4>
+                <div id="svcCollapseTwo" class="accordion-collapse collapse" aria-labelledby="serviceFaqHeadingTwo" data-bs-parent="#serviceFaqAccordion">
+                  <div class="accordion-body">
+                    Yes, precision straight-razor detailing on the cheek lines and neck with essential oil infused steam towels is fully included in the Executive package.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

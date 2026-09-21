@@ -315,5 +315,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ------------------------------------------------------------------------
+     7. ACCORDION & FAQ DROPDOWN SYSTEM
+     ------------------------------------------------------------------------ */
+  const accordionButtons = document.querySelectorAll('.accordion-button');
+  accordionButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetSelector = btn.getAttribute('data-bs-target') || btn.getAttribute('href');
+      if (!targetSelector) return;
+      const targetCollapse = document.querySelector(targetSelector);
+      if (!targetCollapse) return;
+
+      const isCurrentlyOpen = targetCollapse.classList.contains('show');
+      const parentSelector = targetCollapse.getAttribute('data-bs-parent');
+
+      if (parentSelector) {
+        const parentEl = document.querySelector(parentSelector);
+        if (parentEl) {
+          const sisterCollapses = parentEl.querySelectorAll('.accordion-collapse');
+          const sisterButtons = parentEl.querySelectorAll('.accordion-button');
+
+          sisterCollapses.forEach(c => c.classList.remove('show'));
+          sisterButtons.forEach(b => {
+            b.classList.add('collapsed');
+            b.setAttribute('aria-expanded', 'false');
+          });
+        }
+      }
+
+      if (isCurrentlyOpen) {
+        targetCollapse.classList.remove('show');
+        btn.classList.add('collapsed');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        targetCollapse.classList.add('show');
+        btn.classList.remove('collapsed');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
   console.log('IRON & IVORY — Master Scripts Initialized.');
 });
