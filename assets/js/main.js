@@ -212,13 +212,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ------------------------------------------------------------------------
+  // Dynamic active menu highlighting for desktop & mobile drawer
+  const currentFileName = window.location.pathname.split('/').pop() || 'index.html';
+  const allNavAnchors = document.querySelectorAll('.nav-menu a, .mobile-menu-list a');
+  allNavAnchors.forEach(anchor => {
+    const href = anchor.getAttribute('href');
+    if (href) {
+      const hrefFile = href.split('#')[0].split('?')[0];
+      if (hrefFile === currentFileName || (currentFileName === '' && hrefFile === 'index.html')) {
+        anchor.classList.add('active');
+        const parentLi = anchor.closest('li');
+        if (parentLi) parentLi.classList.add('active');
+      }
+    }
+  });
+
+  /* ------------------------------------------------------------------------
      6. BOOKING MODAL & INTERACTIVE FORMS
      ------------------------------------------------------------------------ */
-  const bookingModal = document.querySelector('.booking-modal-wrapper');
-  const bookingTriggers = document.querySelectorAll('.trigger-booking-modal');
-  const bookingModalClose = document.querySelector('.booking-modal-close');
+  function getBookingModal() {
+    return document.querySelector('.booking-modal-wrapper');
+  }
 
   function openBookingModal(serviceName = '') {
+    const bookingModal = getBookingModal();
     if (bookingModal) {
       bookingModal.classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -226,16 +243,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const serviceSelect = bookingModal.querySelector('select[name="service"]');
         if (serviceSelect) serviceSelect.value = serviceName;
       }
+    } else {
+      window.location.href = 'contact.html';
     }
   }
 
   function closeBookingModal() {
+    const bookingModal = getBookingModal();
     if (bookingModal && bookingModal.classList.contains('active')) {
       bookingModal.classList.remove('active');
       document.body.style.overflow = '';
     }
   }
 
+  const bookingTriggers = document.querySelectorAll('.trigger-booking-modal');
   bookingTriggers.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -244,9 +265,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  bookingModalClose?.addEventListener('click', closeBookingModal);
-  bookingModal?.addEventListener('click', (e) => {
-    if (e.target === bookingModal) closeBookingModal();
+  document.addEventListener('click', (e) => {
+    if (e.target.matches('.booking-modal-close') || e.target.closest('.booking-modal-close')) {
+      closeBookingModal();
+    }
+    const bookingModal = getBookingModal();
+    if (e.target === bookingModal) {
+      closeBookingModal();
+    }
   });
 
   // Form Submission Validation

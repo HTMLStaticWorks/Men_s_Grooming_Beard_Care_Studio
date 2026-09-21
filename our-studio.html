@@ -74,7 +74,7 @@
         <a href="index.html" class="navbar-brand-logo" style="font-size: 1.4rem;">
           <i class="bi bi-scissors text-gold me-2"></i>IRON <span>&</span> IVORY
         </a>
-        <button class="drawer-close btn p-0 text-white" aria-label="Close Navigation">
+        <button class="drawer-close btn p-0" aria-label="Close Navigation">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
@@ -237,6 +237,177 @@
       </div>
     </div>
   </section>
+
+  <!-- =========================================================================
+       NEW SECTION: THE STUDIO ENVIRONMENT & ARTISANAL AMENITIES
+       ========================================================================= -->
+  <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="text-center mb-5" style="max-width: 700px; margin: 0 auto;">
+        <span class="section-label d-block mb-3">Sanctuary Architecture</span>
+        <h2 class="h1 mb-3">Designed For Quiet Confidence</h2>
+        <p class="text-muted" style="font-size: 0.95rem;">
+          Step into a space crafted specifically to slow down time. Custom leather barber chairs, acoustic dampening
+          panels, and bespoke apothecary aroma blends.
+        </p>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <!-- Feature 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card-editorial text-center h-100 p-4">
+            <div>
+              <div class="mb-3">
+                <i class="bi bi-gem text-gold display-6"></i>
+              </div>
+              <h3 class="h4 mb-2">Takara Belmont Chairs</h3>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Custom hand-stitched obsidian leather recliners imported from Osaka for optimal posture and spine
+                support.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card-editorial text-center h-100 p-4">
+            <div>
+              <div class="mb-3">
+                <i class="bi bi-cup-hot text-gold display-6"></i>
+              </div>
+              <h3 class="h4 mb-2">Private Tasting Bar</h3>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Curated Japanese whiskies, single-origin espresso pours, and cold-pressed botanical tonics.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card-editorial text-center h-100 p-4">
+            <div>
+              <div class="mb-3">
+                <i class="bi bi-droplet-half text-gold display-6"></i>
+              </div>
+              <h3 class="h4 mb-2">Japanese Scalp Basins</h3>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Ergonomic head-rest wash stations providing zero neck strain during deep scalping cleansing rituals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card-editorial text-center h-100 p-4">
+            <div>
+              <div class="mb-3">
+                <i class="bi bi-volume-up text-gold display-6"></i>
+              </div>
+              <h3 class="h4 mb-2">Acoustic Privacy Zones</h3>
+              <p class="text-muted" style="font-size: 0.88rem;">
+                Engineered sound absorption baffles allowing effortless confidential conversation without cross-room
+                ambient noise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIVERSAL APPOINTMENT BOOKING MODAL -->
+  <div class="lightbox-modal booking-modal-wrapper" style="z-index: 2500;">
+    <div class="lightbox-content"
+      style="max-width: 620px; width: 100%; background: var(--bg-card); padding: 2.5rem 2rem; border: 1px solid var(--accent-gold); border-radius: 6px; position: relative; max-height: 90vh; overflow-y: auto;">
+      <button class="booking-modal-close"
+        style="position: absolute; top: 18px; right: 22px; background: none; border: none; color: var(--text-primary); font-size: 1.8rem; cursor: pointer;">
+        &times;
+      </button>
+
+      <span class="section-label">Online Enquiry</span>
+      <h3 class="mb-4">Book Your Grooming Session</h3>
+
+      <form class="studio-interactive-form">
+        <div class="row g-4">
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Full Name *</label>
+              <input type="text" class="studio-input" placeholder="e.g. Julian Vance" required>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Email Address *</label>
+              <input type="email" class="studio-input" placeholder="e.g. julian@example.com" required>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Phone Number *</label>
+              <input type="tel" class="studio-input" placeholder="+1 (555) 000-0000" required>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Select Service *</label>
+              <select name="service" class="studio-input" required>
+                <option value="">Choose Service...</option>
+                <option value="Tailored Haircut">Tailored Haircut ($55)</option>
+                <option value="Beard Sculpt & Trim">Beard Sculpt & Trim ($45)</option>
+                <option value="Hot Towel Shave">Hot Towel Shave ($60)</option>
+                <option value="The Signature Combo">The Signature Combo ($85)</option>
+                <option value="The Executive Ritual">The Executive Ritual ($110)</option>
+                <option value="The Ritual Ultimate">The Ritual Ultimate ($140)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Preferred Date *</label>
+              <input type="date" class="studio-input" required>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Preferred Time *</label>
+              <select class="studio-input" required>
+                <option value="">Select Time...</option>
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="02:00 PM">02:00 PM</option>
+                <option value="04:30 PM">04:30 PM</option>
+                <option value="06:30 PM">06:30 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="studio-form-group">
+              <label class="studio-form-label">Special Notes / Requests</label>
+              <textarea class="studio-input" rows="3"
+                placeholder="Any specific hair style preferences or barber requests..."
+                style="height: auto; padding-top: 1rem;"></textarea>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-feedback-alert mb-3" style="display: none; font-size: 0.9rem; font-weight: 600;"></div>
+            <button type="submit" class="btn-primary-studio w-100">
+              Confirm Reservation Request <i class="bi bi-calendar-check ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="studio-footer">

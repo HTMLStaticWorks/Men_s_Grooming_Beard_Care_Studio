@@ -160,7 +160,7 @@ h6, .h6 { font-size: 1.05rem; }
   letter-spacing: 0.25em;
   color: var(--accent-gold);
   display: inline-block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
   font-weight: 600;
 }
 
@@ -278,6 +278,9 @@ html[data-theme="light"] .btn-outline-studio:focus {
   padding: 0.35rem 0.75rem;
   border: 1px solid var(--accent-gold);
   border-radius: 2px;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.85rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -494,11 +497,53 @@ html[data-theme="light"] .btn-outline-studio:focus {
   border-bottom: 1px solid var(--border-color);
 }
 
+.drawer-close {
+  color: var(--text-primary) !important;
+  font-size: 1.6rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+.drawer-close:hover {
+  color: var(--accent-gold) !important;
+}
+
 .mobile-menu-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+.mobile-menu-list .nav-link-anchor {
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.mobile-menu-list .nav-link-anchor.active,
+.mobile-menu-list li.active > .nav-link-anchor,
+.mobile-dropdown-menu .dropdown-anchor.active {
+  color: var(--accent-gold) !important;
+  font-weight: 700;
+}
+
+.mobile-menu-list li.active > .nav-link-anchor::before {
+  content: '';
+  position: absolute;
+  left: -0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background-color: var(--accent-gold);
+  border-radius: 2px;
 }
 
 .mobile-dropdown-menu {
@@ -1413,6 +1458,57 @@ html[dir="rtl"] .trust-strip {
   .row > .filterable-item:last-child:nth-child(odd) {
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Item 3: Reduce space between hero section and 2nd section in tab view */
+  .hero-cinematic {
+    min-height: auto !important;
+    padding-top: 7.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  .hero-cinematic + section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Item 5: Align comparison matrix container properly and add horizontal scrollbar on mobile */
+  .comparison-matrix-card {
+    padding: 1rem 0.5rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .comparison-matrix-card .table-responsive {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-gold) var(--bg-secondary);
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .comparison-matrix-card .table-responsive::-webkit-scrollbar {
+    height: 8px;
+    display: block !important;
+  }
+
+  .comparison-matrix-card .table-responsive::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+  }
+
+  .comparison-matrix-card .table-responsive::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 4px;
+  }
+
+  .comparison-table {
+    min-width: 680px !important;
   }
 }
 
