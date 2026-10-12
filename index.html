@@ -58,13 +58,13 @@
         </nav>
 
         <!-- Header Actions: Theme & RTL Toggle & Book CTA -->
-        <div class="d-flex align-items-center gap-3">
-          <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction">RTL</button>
-          <button class="theme-toggle-btn" aria-label="Toggle Theme">
+        <div class="header-actions-wrapper">
+          <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction" title="Toggle RTL/LTR"><i class="bi bi-text-right"></i></button>
+          <button class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Mode">
             <i class="bi bi-sun-fill"></i>
           </button>
           
-          <a href="contact.html" class="btn-primary-studio d-inline-flex nav-book-btn trigger-booking-modal">
+          <a href="contact.html" class="btn-primary-studio nav-book-btn trigger-booking-modal">
             Book Appointment
           </a>
 
@@ -118,11 +118,11 @@
       </a>
       <div class="d-flex align-items-center justify-content-between text-muted mb-2" style="font-size: 0.85rem;">
         <span>Layout Direction:</span>
-        <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction">RTL</button>
+        <button class="rtl-toggle-btn" aria-label="Toggle Layout Direction" title="Toggle RTL/LTR"><i class="bi bi-text-right"></i></button>
       </div>
       <div class="d-flex align-items-center justify-content-between text-muted" style="font-size: 0.85rem;">
         <span>Toggle Mode:</span>
-        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Mode">
           <i class="bi bi-sun-fill"></i>
         </button>
       </div>
@@ -315,32 +315,90 @@
   </section>
 
   <!-- =========================================================================
-       COMBINATION PACKAGES
+       WHY CHOOSE US SECTION
+       ========================================================================= -->
+  <section class="py-5" style="padding-top: 6rem !important; padding-bottom: 6rem !important; background-color: var(--bg-tertiary); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="text-center mb-5" style="max-width: 720px; margin: 0 auto;">
+        <span class="section-label">The Studio Standard</span>
+        <h2>Why Choose Iron & Ivory</h2>
+        <p class="text-muted">Uncompromising dedication to classic barbershop rituals, surgical blade precision, and private masculine comfort.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100 p-4">
+            <div class="mb-3 text-gold" style="font-size: 2rem;"><i class="bi bi-award"></i></div>
+            <h3 class="h4 mb-2">Master Barber Artistry</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">Every chair is helmed by barbers with over a decade of dedicated training in Japanese steel scissor work and straight-razor ergonomics.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100 p-4">
+            <div class="mb-3 text-gold" style="font-size: 2rem;"><i class="bi bi-shield-check"></i></div>
+            <h3 class="h4 mb-2">Hospital-Grade Sterilization</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">Medical UV autoclaves and single-use German platinum razor blades guarantee the highest standards of studio hygiene and skin safety.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100 p-4">
+            <div class="mb-3 text-gold" style="font-size: 2rem;"><i class="bi bi-droplet"></i></div>
+            <h3 class="h4 mb-2">Organic Botanical Formulations</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">All beard elixirs, tonics, and hot-towel steam infusions are batch-crafted in-house with zero sulfates, parabens, or synthetic additives.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100 p-4">
+            <div class="mb-3 text-gold" style="font-size: 2rem;"><i class="bi bi-person-bounding-box"></i></div>
+            <h3 class="h4 mb-2">Bespoke Diagnostic Consultations</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">We diagnose your bone structure, hair growth direction, and beard density prior to making the first cut for a look tailored strictly to you.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100 p-4">
+            <div class="mb-3 text-gold" style="font-size: 2rem;"><i class="bi bi-cup-hot"></i></div>
+            <h3 class="h4 mb-2">Private Executive Lounge</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">Enjoy single-origin espresso or curated single malt whiskies in an unhurried, leather-appointed gentlemen's club atmosphere.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100 p-4">
+            <div class="mb-3 text-gold" style="font-size: 2rem;"><i class="bi bi-star"></i></div>
+            <h3 class="h4 mb-2">Seamless Membership Perks</h3>
+            <p class="text-muted" style="font-size: 0.9rem;">Priority slot reservation, complimentary touch-up sessions, and quarterly product allowances for recurring patrons.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       GROOMING PACKAGES
        ========================================================================= -->
   <section class="py-5" style="padding-top: 6rem !important;">
     <div class="container">
       <div class="text-center mb-5" style="max-width: 700px; margin: 0 auto;">
-        <span class="section-label">Curated Experience</span>
-        <h2>Haircut & Beard Combinations</h2>
-        <p class="text-muted">Combining haircut, beard sculpt, and hot towel treatments for maximum synergy and value.</p>
+        <span class="section-label">All-Inclusive Sessions</span>
+        <h2>Curated Grooming Packages</h2>
+        <p class="text-muted">Combining tailored haircutting, architectural beard sculpting, and restorative hot towel therapies into complete ritual experiences.</p>
       </div>
 
       <div class="row g-4">
-        <!-- Combo 1 -->
+        <!-- Package 1 -->
         <div class="col-lg-4">
-          <div class="service-card-editorial">
+          <div class="service-card-editorial h-100 d-flex flex-column justify-content-between">
             <div>
-              <span class="badge-gold mb-3">Popular Choice</span>
-              <h3 class="h3 mb-2">The Signature</h3>
+              <span class="badge-gold mb-3">ESSENTIAL CARE</span>
+              <h3 class="h3 mb-2">The Signature Combo</h3>
               <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">
-                Custom Precision Haircut + Complete Beard Trim & Line-up with hot oil treatment.
+                Custom Precision Haircut + Complete Beard Trim & Line-up with hot essential oil treatment.
               </p>
 
               <ul class="list-unstyled text-muted mb-4" style="font-size: 0.9rem;">
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Scalp cleansing & consultation</li>
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Scissor & clipper hair styling</li>
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Beard shape contouring</li>
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Hot towel neck finish</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Scalp cleansing & hair diagnosis</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Precision scissor & clipper hair styling</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Beard shape contouring & razor line-up</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Eucalyptus hot towel neck finish</li>
               </ul>
             </div>
 
@@ -349,28 +407,28 @@
                 <span class="text-muted" style="font-size: 0.85rem;"><i class="bi bi-clock me-1"></i> 60 Mins</span>
                 <span class="service-price">$85</span>
               </div>
-              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Signature ($85)">
-                Book Combination
+              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Signature Combo ($85)">
+                Book Package
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Combo 2 -->
+        <!-- Package 2 -->
         <div class="col-lg-4">
-          <div class="service-card-editorial" style="border-color: var(--accent-gold);">
+          <div class="service-card-editorial h-100 d-flex flex-column justify-content-between" style="border-color: var(--accent-gold);">
             <div>
-              <span class="badge-gold mb-3" style="background: var(--accent-gold); color: #000;">Executive Ritual</span>
-              <h3 class="h3 mb-2">The Executive</h3>
+              <span class="badge-gold mb-3" style="background: var(--accent-gold); color: #000;">MOST POPULAR</span>
+              <h3 class="h3 mb-2">The Executive Overhaul</h3>
               <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">
                 Full Haircut + Beard Sculpting + Straight Razor Cheek Pass + Express Scalp Treatment.
               </p>
 
               <ul class="list-unstyled text-muted mb-4" style="font-size: 0.9rem;">
                 <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Everything in Signature package</li>
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Straight razor line sharpness</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Straight razor line sharpness & steam</li>
                 <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Organic beard balm massage</li>
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Hair styling with clay/pomade</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Hair styling with clay/pomade finish</li>
               </ul>
             </div>
 
@@ -379,28 +437,28 @@
                 <span class="text-muted" style="font-size: 0.85rem;"><i class="bi bi-clock me-1"></i> 75 Mins</span>
                 <span class="service-price">$110</span>
               </div>
-              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Executive ($110)">
-                Book Combination
+              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Executive Overhaul ($110)">
+                Book Package
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Combo 3 -->
+        <!-- Package 3 -->
         <div class="col-lg-4">
-          <div class="service-card-editorial">
+          <div class="service-card-editorial h-100 d-flex flex-column justify-content-between">
             <div>
-              <span class="badge-gold mb-3">Ultimate Care</span>
-              <h3 class="h3 mb-2">The Ritual</h3>
+              <span class="badge-gold mb-3">ROYAL TREATMENT</span>
+              <h3 class="h3 mb-2">The Ultimate Ritual</h3>
               <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1.5rem;">
                 Haircut + Full Hot Towel Shave / Beard Restoration + Deep Facial Cleansing & Scalp Massage.
               </p>
 
               <ul class="list-unstyled text-muted mb-4" style="font-size: 0.9rem;">
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Complete Haircut & Styling</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Complete Haircut & Custom Styling</li>
                 <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Double Hot Towel Shave ritual</li>
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Botanical facial steam cleanse</li>
-                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Complimentary lounge beverage</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Botanical facial steam & pore cleanse</li>
+                <li class="mb-2"><i class="bi bi-check2 text-gold me-2" style="color: var(--accent-gold);"></i> Complimentary top-shelf lounge beverage</li>
               </ul>
             </div>
 
@@ -409,8 +467,8 @@
                 <span class="text-muted" style="font-size: 0.85rem;"><i class="bi bi-clock me-1"></i> 90 Mins</span>
                 <span class="service-price">$140</span>
               </div>
-              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Ritual ($140)">
-                Book Combination
+              <a href="contact.html" class="btn-primary-studio w-100 mt-3 trigger-booking-modal" data-service="The Ultimate Ritual ($140)">
+                Book Package
               </a>
             </div>
           </div>
@@ -494,8 +552,8 @@
         <div class="col-lg-3 col-md-6">
           <div class="product-card">
             <div class="product-thumb">
-              <span class="badge-gold" style="position: absolute; top: 12px; left: 12px;">Best Seller</span>
-              <img src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?auto=format&fit=crop&w=500&q=80" alt="Signature Beard Elixir Oil">
+              <span class="badge-gold" style="position: absolute; top: 12px; left: 12px; z-index: 2;">Best Seller</span>
+              <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=600&q=80" alt="Signature Beard Elixir Oil">
             </div>
             <div>
               <span class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-mono);">BEARD CARE</span>
@@ -515,7 +573,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="product-card">
             <div class="product-thumb">
-              <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=500&q=80" alt="Matte Finish Hair Clay">
+              <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80" alt="Matte Finish Hair Clay">
             </div>
             <div>
               <span class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-mono);">STYLING</span>
@@ -535,7 +593,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="product-card">
             <div class="product-thumb">
-              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Beard Conditioning Balm">
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Beard Conditioning Balm">
             </div>
             <div>
               <span class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-mono);">BEARD CARE</span>
@@ -555,7 +613,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="product-card">
             <div class="product-thumb">
-              <img src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=500&q=80" alt="Botanical Aftershave Tonic">
+              <img src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80" alt="Botanical Aftershave Tonic">
             </div>
             <div>
               <span class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-mono);">SHAVING</span>
@@ -575,9 +633,83 @@
   </section>
 
   <!-- =========================================================================
-       MEMBERSHIP PREVIEW
+       BEFORE & AFTER / STYLE GALLERY
        ========================================================================= -->
   <section class="py-5" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container py-4">
+      <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+        <div>
+          <span class="section-label">Real Transformations</span>
+          <h2>Before & After / Style Gallery</h2>
+          <p class="text-muted mb-0">Witness the structural definition, razor sharpness, and volume balance created in our chairs.</p>
+        </div>
+        <a href="gallery.html" class="btn-outline-studio" style="padding: 0.6rem 1.5rem; font-size: 0.75rem;">
+          View Full Archive <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Transformation 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100">
+            <div class="service-img-wrapper" style="height: 280px;">
+              <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Executive Taper Fade & Beard Sculpt Transformation">
+            </div>
+            <span class="badge-gold">TRANSFORMATION 01</span>
+            <h3 class="h4 mb-2">Executive Low Taper & Beard Blend</h3>
+            <p class="text-gold font-monospace mb-2" style="font-size: 0.82rem;"><i class="bi bi-scissors me-1"></i> Master Julian Vance</p>
+            <p class="text-muted mb-3" style="font-size: 0.88rem;">
+              Corrected overgrown neckline bulk into an architectural taper fade with crisp straight-razor cheek alignment and organic balm finish.
+            </p>
+            <a href="gallery.html" class="btn-outline-studio w-100 text-center" style="padding: 0.45rem 1rem; font-size: 0.72rem;">
+              Inspect Cut Details
+            </a>
+          </div>
+        </div>
+
+        <!-- Transformation 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100">
+            <div class="service-img-wrapper" style="height: 280px;">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Full Beard Geometric Reshape Transformation">
+            </div>
+            <span class="badge-gold">TRANSFORMATION 02</span>
+            <h3 class="h4 mb-2">Jawline Geometry & Beard Contouring</h3>
+            <p class="text-gold font-monospace mb-2" style="font-size: 0.82rem;"><i class="bi bi-scissors me-1"></i> Master Thomas Thorne</p>
+            <p class="text-muted mb-3" style="font-size: 0.88rem;">
+              Reshaped patchy, uneven growth into a masculine chiseled silhouette, complemented by hot eucalyptus oil deep conditioning.
+            </p>
+            <a href="gallery.html" class="btn-outline-studio w-100 text-center" style="padding: 0.45rem 1rem; font-size: 0.72rem;">
+              Inspect Cut Details
+            </a>
+          </div>
+        </div>
+
+        <!-- Transformation 3 -->
+        <div class="col-lg-4 col-md-12">
+          <div class="service-card-editorial h-100">
+            <div class="service-img-wrapper" style="height: 280px;">
+              <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Hot Towel Straight Razor Transformation">
+            </div>
+            <span class="badge-gold">TRANSFORMATION 03</span>
+            <h3 class="h4 mb-2">Textured Pompadour & Razor Shave</h3>
+            <p class="text-gold font-monospace mb-2" style="font-size: 0.82rem;"><i class="bi bi-scissors me-1"></i> Master Marcus Sterling</p>
+            <p class="text-muted mb-3" style="font-size: 0.88rem;">
+              Scissor shear-textured pompadour paired with a double hot towel straight-razor shave for effortless everyday maintenance.
+            </p>
+            <a href="gallery.html" class="btn-outline-studio w-100 text-center" style="padding: 0.45rem 1rem; font-size: 0.72rem;">
+              Inspect Cut Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MEMBERSHIP PREVIEW
+       ========================================================================= -->
+  <section class="py-5" style="border-bottom: 1px solid var(--border-color);">
     <div class="container py-4">
       <div class="row align-items-center g-5">
         <div class="col-lg-6">
@@ -620,6 +752,75 @@
 
             <a href="membership.html" class="btn-outline-studio w-100 mt-3 text-center">
               View All 3 Tiers
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       OUR GROOMING EXPERTS / BARBERS SECTION
+       ========================================================================= -->
+  <section class="py-5" style="padding-top: 6rem !important; padding-bottom: 6rem !important; background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="text-center mb-5" style="max-width: 650px; margin: 0 auto;">
+        <span class="section-label">Master Artisans</span>
+        <h2>Our Grooming Experts & Barbers</h2>
+        <p class="text-muted">Meet the certified craftsmen dedicated to delivering precision, style architecture, and timeless relaxation.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Barber 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100">
+            <div class="service-img-wrapper" style="height: 360px;">
+              <img src="assets/images/barbers/julian-vance.jpg" alt="Master Barber Julian Vance">
+            </div>
+            <span class="badge-gold">FOUNDER & MASTER BARBER</span>
+            <h3 class="h4 mb-1">Julian Vance</h3>
+            <p class="text-gold font-monospace mb-3" style="font-size: 0.85rem;"><i class="bi bi-award me-1"></i> 14 Years Exp. • London & Tokyo Trained</p>
+            <p class="text-muted mb-4" style="font-size: 0.88rem;">
+              Specializing in custom scissor architecture, skull-shape diagnosis, and seamless taper fades that grow out naturally.
+            </p>
+            <a href="contact.html" class="btn-outline-studio w-100 text-center trigger-booking-modal" data-service="Julian Vance — Master Cut ($55)">
+              Book With Julian
+            </a>
+          </div>
+        </div>
+
+        <!-- Barber 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-editorial h-100">
+            <div class="service-img-wrapper" style="height: 360px;">
+              <img src="assets/images/barbers/thomas-thorne.jpg" alt="Beard Sculpt Specialist Thomas Thorne">
+            </div>
+            <span class="badge-gold">BEARD MASTER & STYLIST</span>
+            <h3 class="h4 mb-1">Thomas Thorne</h3>
+            <p class="text-gold font-monospace mb-3" style="font-size: 0.85rem;"><i class="bi bi-award me-1"></i> 11 Years Exp. • Facial Geometry Specialist</p>
+            <p class="text-muted mb-4" style="font-size: 0.88rem;">
+              Master of jawline contouring, dense beard weight management, and hot essential oil conditioning rituals.
+            </p>
+            <a href="contact.html" class="btn-outline-studio w-100 text-center trigger-booking-modal" data-service="Thomas Thorne — Beard Sculpt ($45)">
+              Book With Thomas
+            </a>
+          </div>
+        </div>
+
+        <!-- Barber 3 -->
+        <div class="col-lg-4 col-md-12">
+          <div class="service-card-editorial h-100">
+            <div class="service-img-wrapper" style="height: 360px;">
+              <img src="assets/images/barbers/marcus-sterling.jpg" alt="Shaving Master Marcus Sterling">
+            </div>
+            <span class="badge-gold">SHAVING ARTISAN & SKINCARE</span>
+            <h3 class="h4 mb-1">Marcus Sterling</h3>
+            <p class="text-gold font-monospace mb-3" style="font-size: 0.85rem;"><i class="bi bi-award me-1"></i> 12 Years Exp. • Traditional Wet Shave Master</p>
+            <p class="text-muted mb-4" style="font-size: 0.88rem;">
+              Renowned for his zero-irritation straight-razor shave technique, calming steam therapies, and scalp restoration.
+            </p>
+            <a href="contact.html" class="btn-outline-studio w-100 text-center trigger-booking-modal" data-service="Marcus Sterling — Hot Towel Shave ($60)">
+              Book With Marcus
             </a>
           </div>
         </div>

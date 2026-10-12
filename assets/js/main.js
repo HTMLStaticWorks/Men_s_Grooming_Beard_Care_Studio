@@ -65,14 +65,22 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('iron_ivory_dir', dir);
 
     rtlToggleBtns.forEach(btn => {
+      let icon = btn.querySelector('i');
+      if (!icon) {
+        icon = document.createElement('i');
+        btn.innerHTML = '';
+        btn.appendChild(icon);
+      }
       if (dir === 'rtl') {
-        btn.textContent = 'LTR';
+        icon.className = 'bi bi-text-left';
         btn.classList.add('active');
         btn.setAttribute('aria-label', 'Switch to LTR Layout');
+        btn.setAttribute('title', 'Switch to LTR Layout');
       } else {
-        btn.textContent = 'RTL';
+        icon.className = 'bi bi-text-right';
         btn.classList.remove('active');
         btn.setAttribute('aria-label', 'Switch to RTL Layout');
+        btn.setAttribute('title', 'Switch to RTL Layout');
       }
     });
   }
